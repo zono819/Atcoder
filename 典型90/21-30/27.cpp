@@ -18,4 +18,19 @@ signed main()
 {
     cin.tie(nullptr);
     ios::sync_with_stdio(false);
+    int n;
+    cin>>n;
+    set<string> s;
+    rep(i, 0, n)
+    {
+        string t;
+        cin>>t;
+        int a = s.size();
+        s.insert(t);
+        int b = s.size();
+        if(b>a)
+        {
+            cout << i + 1 << endl;
+        }
+    }
 }

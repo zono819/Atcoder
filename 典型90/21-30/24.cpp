@@ -18,4 +18,20 @@ signed main()
 {
     cin.tie(nullptr);
     ios::sync_with_stdio(false);
+    int n, k;
+    cin >> n >> k;
+    vi a(n), b(n);
+    rep(i,0,n)
+    {
+        cin >> a[i];
+    }
+    rep(i, 0, n)
+    {
+        cin >> b[i];
+    }
+    rep(i,0,n)
+    {
+        k -= abs(a[i] - b[i]);
+    }
+    cout << ((k >= 0)&&((k%2)==0) ? "Yes" : "No") << endl;
 }

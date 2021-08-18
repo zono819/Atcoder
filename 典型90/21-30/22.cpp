@@ -18,4 +18,8 @@ signed main()
 {
     cin.tie(nullptr);
     ios::sync_with_stdio(false);
+    int a,b,c;
+    cin >> a >> b >> c;
+    int g = __gcd(c, __gcd(a, b));
+    cout << (a / g - 1) + (b / g - 1) + (c / g - 1) << endl;
 }
