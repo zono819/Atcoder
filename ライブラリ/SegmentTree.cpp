@@ -1,6 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+ //range_min
+    SegmentTree<int> seg(
+        N, [](int a, int b)
+        { return min(a, b); },
+        INT_MAX);
+
+    //range_sum
+    SegmentTree<int> seg(
+        N, [](int a, int b)
+        { return a + b; },
+        0);
+*/
 template <typename Monoid>
 struct SegmentTree
 {
